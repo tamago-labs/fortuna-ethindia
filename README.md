@@ -56,8 +56,8 @@ The frontend made by `create-react-app` and live at https://erc1155t.tamagonft.x
 
 Contract Name | Contract Address 
 --- | ---  
-FortunaX | 
-FortunaZ | 
+FortunaX | 0x4AdC282FBa39b0d64Cdf561679fA4311b2Afe2Ec
+FortunaZ | 0xDaE891d97F2874ECaB672073a5ad6a2aE3d61955
 
 ### Mumbai Testnet (Chain id : 43113)
 
