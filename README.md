@@ -63,7 +63,9 @@ FortunaZ | 0xDaE891d97F2874ECaB672073a5ad6a2aE3d61955
 
 Contract Name | Contract Address 
 --- | ---  
-FortunaY | 
+FortunaY | 0x88EdDF8955F81D76493C949204ebF3BdBb0985f2
+Uniswap Router | 0xBC1dc03FfaB03A7C48c50cF9F668F78A291E7772
+Uniswap Factory | 0x4e05327f3077D95851Bd3f1DFA2fFe60C44a2B0d
 
 ## Next Steps
 
