@@ -41,7 +41,7 @@ describe("Fortuna XYZ", () => {
         factory = await Factory.deploy(admin.address)
 
         // deploy routers 
-        router = await Router.deploy(factory.address, weth.address);
+        router = await Router.deploy(factory.address);
 
         // initialize V2
         await factory.createPair(tokenA.address, tokenB.address);

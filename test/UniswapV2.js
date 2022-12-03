@@ -35,7 +35,7 @@ describe("UniswapV2 contract", () => {
         weth = await Weth.deploy();
 
         // deploy routers 
-        router = await Router.deploy(factory.address, weth.address);
+        router = await Router.deploy(factory.address);
 
         // initialize V2
         await factory.createPair(tokenA.address, tokenB.address);
