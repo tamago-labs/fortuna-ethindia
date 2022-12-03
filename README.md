@@ -1,7 +1,10 @@
 # Fortuna
 
+## Live URL
+
+https://lovely-bonbon-57f45a.netlify.app/
+
 ## Motivation
- 
 
 ## Problem & Solution
  
