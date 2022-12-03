@@ -43,6 +43,6 @@ contract FortunaZ is IXReceiver {
 
         address tokenAddress = tokens[token];
 
-        IERC20(tokenAddress).safeTransfer(recipient, _amount);
+        IERC20(tokenAddress).transfer(recipient, _amount);
     }
 }
