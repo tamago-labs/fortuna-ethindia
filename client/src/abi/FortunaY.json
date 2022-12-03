@@ -1,0 +1,242 @@
+[
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "_router",
+                "type": "address"
+            },
+            {
+                "internalType": "contract IConnext",
+                "name": "_connext",
+                "type": "address"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_domainId",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "name": "balances",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "connext",
+        "outputs": [
+            {
+                "internalType": "contract IConnext",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "domainId",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            },
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "name": "outstandings",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint32",
+                "name": "destination",
+                "type": "uint32"
+            },
+            {
+                "internalType": "address",
+                "name": "sender",
+                "type": "address"
+            },
+            {
+                "internalType": "bytes32",
+                "name": "token",
+                "type": "bytes32"
+            }
+        ],
+        "name": "push",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint32",
+                "name": "_destinationId",
+                "type": "uint32"
+            },
+            {
+                "internalType": "address",
+                "name": "_contractAddress",
+                "type": "address"
+            }
+        ],
+        "name": "registerTarget",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "bytes32",
+                "name": "_tokenSymbol",
+                "type": "bytes32"
+            },
+            {
+                "internalType": "address",
+                "name": "_tokenAddress",
+                "type": "address"
+            }
+        ],
+        "name": "registerToken",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "bytes32",
+                "name": "_fromToken",
+                "type": "bytes32"
+            },
+            {
+                "internalType": "bytes32",
+                "name": "_toToken",
+                "type": "bytes32"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_amount",
+                "type": "uint256"
+            },
+            {
+                "internalType": "address",
+                "name": "_sender",
+                "type": "address"
+            }
+        ],
+        "name": "testSwap",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "bytes32",
+                "name": "",
+                "type": "bytes32"
+            }
+        ],
+        "name": "tokens",
+        "outputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "bytes32",
+                "name": "_transferId",
+                "type": "bytes32"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_amount",
+                "type": "uint256"
+            },
+            {
+                "internalType": "address",
+                "name": "_asset",
+                "type": "address"
+            },
+            {
+                "internalType": "address",
+                "name": "_originSender",
+                "type": "address"
+            },
+            {
+                "internalType": "uint32",
+                "name": "_origin",
+                "type": "uint32"
+            },
+            {
+                "internalType": "bytes",
+                "name": "_callData",
+                "type": "bytes"
+            }
+        ],
+        "name": "xReceive",
+        "outputs": [
+            {
+                "internalType": "bytes",
+                "name": "",
+                "type": "bytes"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    }
+]

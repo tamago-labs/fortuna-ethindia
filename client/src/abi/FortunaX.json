@@ -1,0 +1,150 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "contract IConnext",
+				"name": "_connext",
+				"type": "address"
+			},
+			{
+				"internalType": "uint32",
+				"name": "_domainId",
+				"type": "uint32"
+			}
+		],
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"inputs": [],
+		"name": "connext",
+		"outputs": [
+			{
+				"internalType": "contract IConnext",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "domainId",
+		"outputs": [
+			{
+				"internalType": "uint32",
+				"name": "",
+				"type": "uint32"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint32",
+				"name": "destination",
+				"type": "uint32"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "fromToken",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "toToken",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "push",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "fromToken",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "bytes32",
+				"name": "toToken",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "uint256",
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "pushTest",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint32",
+				"name": "_destinationId",
+				"type": "uint32"
+			},
+			{
+				"internalType": "address",
+				"name": "_contractAddress",
+				"type": "address"
+			}
+		],
+		"name": "registerTarget",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "_tokenSymbol",
+				"type": "bytes32"
+			},
+			{
+				"internalType": "address",
+				"name": "_tokenAddress",
+				"type": "address"
+			}
+		],
+		"name": "registerToken",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "bytes32",
+				"name": "",
+				"type": "bytes32"
+			}
+		],
+		"name": "tokens",
+		"outputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
