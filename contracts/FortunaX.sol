@@ -58,7 +58,7 @@ contract FortunaX {
         // User sends funds to this contract
         fromTokenContract.transferFrom(msg.sender, address(this), amount);
 
-        bytes memory callData = abi.encode(fromToken, toToken);
+        bytes memory callData = abi.encode(fromToken, toToken, msg.sender);
 
         uint256 relayerFee = 0;
         connext.xcall{value: relayerFee}(

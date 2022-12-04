@@ -62,16 +62,16 @@ contract FortunaY is IXReceiver {
         bytes memory _callData
     ) external returns (bytes memory) {
         // Unpack the _callData
-        (bytes32 fromToken, bytes32 toToken) = abi.decode(
+        (bytes32 fromToken, bytes32 toToken, address sender) = abi.decode(
             _callData,
-            (bytes32, bytes32)
+            (bytes32, bytes32, address)
         );
 
         address[] memory addresses = new address[](2);
         addresses[0] = tokens[fromToken];
         addresses[1] = tokens[toToken];
 
-        _swap(fromToken, toToken, _amount, _originSender);
+        _swap(fromToken, toToken, _amount, sender);
     }
 
     function testSwap(
